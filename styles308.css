@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+
+h1 {
+    text-align: center;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.learner {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.learner h3 {
+    margin: 0;
+    text-align: left;
+}
+
+.learner p {
+    margin: 5px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.learner ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.learner li {
+    margin: 3px 0;
+    text-align: left;
+}
+
+ 
