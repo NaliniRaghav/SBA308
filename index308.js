@@ -1,4 +1,7 @@
 // The provided course information.
+//The test data is included below in this js file. It includes
+//both valid and invalid data.
+
 const CourseInfo = {
   id: 451,
   name: "Introduction to JavaScript",
