@@ -23,43 +23,90 @@ Features
 
 The application takes in three types of data objects:
 
-### CourseInfo Object
+const CourseInfo = {
+  id: 451,
+  name: "Introduction to JavaScript"
+};
 
-```javascript
-{
-  "id": number, // Course ID
-  "name": string // Course Name
-}
-```
+// The provided assignment group.
+const AssignmentGroup = {
+  id: 12345,
+  name: "Fundamentals of JavaScript",
+  course_id: 451,
+  group_weight: 25,
+  assignments: [
+    {
+      id: 1,
+      name: "Declare a Variable",
+      due_at: "2023-01-25",
+      points_possible: 50
+    },
+    {
+      id: 2,
+      name: "Write a Function",
+      due_at: "2023-02-27",
+      points_possible: 150
+    },
+    {
+      id: 3,
+      name: "Code the World",
+      due_at: "3156-11-15",
+      points_possible: 500
+    }
+  ]
+};
 
-### AssignmentGroup Object
-
-```javascript
-{
-  "id": number, // Assignment Group ID
-  "name": string, // Assignment Group Name
-  "course_id": number, // Associated Course ID
-  "group_weight": number, // Weight of Assignment Group
-  "assignments": [AssignmentInfo] // Array of Assignments
-}
-```
-
-### LearnerSubmission Object
-
-```javascript
-{
-  "learner_id": number, // Learner's ID
-  "assignment_id": number, // ID of the assignment submitted
-  "submission": {
-    "submitted_at": Date string, // Submission date
-    "score": number // Score the learner received
+// The provided learner submission data.
+const LearnerSubmissions = [
+  {
+    learner_id: 125,
+    assignment_id: 1,
+    submission: {
+      submitted_at: "2023-01-25",
+      score: 47
+    }
+  },
+  {
+    learner_id: 125,
+    assignment_id: 2,
+    submission: {
+      submitted_at: "2023-02-12",
+      score: 150
+    }
+  },
+  {
+    learner_id: 125,
+    assignment_id: 3,
+    submission: {
+      submitted_at: "2023-01-25",
+      score: 400
+    }
+  },
+  {
+    learner_id: 132,
+    assignment_id: 1,
+    submission: {
+      submitted_at: "2023-01-24",
+      score: 39
+    }
+  },
+  {
+    learner_id: 132,
+    assignment_id: 2,
+    submission: {
+      submitted_at: "2023-03-07",
+      score: 140
+    }
   }
-}
-```
+];
+
+
+
 
  How to Run
 
-1. Clone the respository
+1. Clone the respository https://github.com/NaliniRaghav/SBA308
+
 2. Open the `index308.js` file and run it using any JavaScript environment or your browser's developer console.
 
 3. The script will process the data and output the learners' scores in the desired format.
