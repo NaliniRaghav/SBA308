@@ -232,7 +232,7 @@ const invalidLearnerSubmissions = [
     submission: { submitted_at: "2023-03-07", score: -10 },
   }, // Invalid score
 ];
-
+// Catching invalid data and displaying error message
 try {
   let invalidResults = getLearnerData(
     CourseInfo,

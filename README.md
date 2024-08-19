@@ -1,4 +1,4 @@
-README for SBA308
+README for SBA308:
 
 Overview
 This project is a JavaScript-based application that processes data from a course, assignment groups, and learner submissions to calculate learners' weighted average scores. The system takes into account late submissions and excludes assignments that are not yet due. The application is built to handle various error scenarios and ensures data integrity.
